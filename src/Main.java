@@ -1,77 +1,95 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Programa de calendario");
-        System.out.println("Pon el mes que quieres ver: ");
-        String month = scanner.nextLine();
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Programa de calendario");
+    System.out.println("Pon el mes que quieres ver: ");
+    String input = scanner.nextLine();
+    String get = input.toLowerCase();
 
-        switch(month){
-            case("enero"):
-                enero enero = new enero();
-                enero.en();
-            break;
+    switch (get) {
+      case ("enero"):
+        trientauno enero = new trientauno();
+        enero.one();
+        break;
 
-            case("febrero"):
-                febrero febrero = new febrero();
-                febrero.febre();
-            break;
+      case ("febrero"):
+        veinte febrero = new veinte();
+        febrero.ocho();
+        break;
 
-            case("marzo"):
-                marzo marzo = new marzo();
-                marzo.marz();
-            break;
+      case ("marzo"):
+        System.out.println("Must masturbate March");
+        System.out.println("-Banjo");
+        trientauno marzo = new trientauno();
+        marzo.one();
+        break;
 
-            case("abril"):
-                abril abril = new abril();
-                abril.abri();
-            break;
+      case ("abril"):
+        tri abril = new tri();
+        abril.treinta();
+        break;
 
-            case("mayo"):
-                mayo mayo = new mayo();
-                mayo.mai();
-            break;
+      case ("mayo"):
+        trientauno mayo = new trientauno();
+        mayo.one();
+        break;
 
-            case("junio"):
-                junio junio = new junio();
-                junio.june();
-            break;
+      case ("junio"):
+        tri junio = new tri();
+        junio.treinta();
+        break;
 
-            case("julio"):
-               julio julio = new julio();
-               julio.julia();
-            break;
+      case ("julio"):
+        trientauno julio = new trientauno();
+        julio.one();
+        break;
 
-            case("agosto"):
-                agosto agosto = new agosto();
-                agosto.august();
-            break;
+      case ("agosto"):
+        trientauno agosto = new trientauno();
+        agosto.one();
+        break;
 
-            case("septiembre"):
-                septiembre septiembre = new septiembre();
-                septiembre.septembre();
-            break;
+      case ("septiembre"):
+        tri septiembre = new tri();
+        septiembre.treinta();
+        break;
 
-            case("octubre"):
-                octubre octubre = new octubre();
-                octubre.october();
-            break;
+      case ("octubre"):
+        trientauno octubre = new trientauno();
+        octubre.one();
+        break;
 
-            case("noviembre"):
-                noviembre noviembre = new noviembre();
-                noviembre.november();
-            break;
+      case ("noviembre"):
+        tri noviembre = new tri();
+        noviembre.treinta();
+        break;
 
-            case("diciembre"):
-                diciembre diciembre = new diciembre();
-                diciembre.december();
-            break;
+      case ("diciembre"):
+        tri diciembre = new tri();
+        diciembre.treinta();
+        break;
 
-            default:
-                System.out.println("Input equivocado");
-            break;
-        }
-        System.out.println("Adios!");
+      default:
+        System.out.println("Input equivocado");
+        System.out.println("Los meses son:");
+        System.out.println("-enero");
+        System.out.println("-febrero");
+        System.out.println("-marzo");
+        System.out.println("-abril");
+        System.out.println("-mayo");
+        System.out.println("-junio");
+        System.out.println("-julio");
+        System.out.println("-agosto");
+        System.out.println("-septiembre");
+        System.out.println("-octubre");
+        System.out.println("-noviembre");
+        System.out.println("-diciembre");
+
+        System.out.println("Vuelve a poner el input");
+        break;
     }
+    System.out.println("Adios!");
+  }
 }
