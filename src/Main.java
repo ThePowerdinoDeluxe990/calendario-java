@@ -12,11 +12,29 @@ public class Main {
       case ("enero"):
         trientauno enero = new trientauno();
         enero.one();
+        System.out.println("Quieres ver los dias festivos?");
+        String dias = scanner.nextLine();
+        String in = dias.toLowerCase();
+        if(in == "si" ){
+          System.out.println("Los dias festivos son: ");
+          System.out.println("Dia 1-Año Nuevo");
+          System.out.println("Dia 6-Epifanía del señor");
+        }else{
+          System.out.println("No vera los dias festivos");
+        }
         break;
 
       case ("febrero"):
         veinte febrero = new veinte();
         febrero.ocho();
+        String day = scanner.nextLine();
+        String dis = day.toLowerCase();
+        if(dis == "si" ){
+          System.out.println("Los dias festivos son: ");
+          System.out.println("No hay dias festivos");
+        }else{
+          System.out.println("No vera los dias festivos");
+        }
         break;
 
       case ("marzo"):
@@ -24,11 +42,29 @@ public class Main {
         System.out.println("-Banjo");
         trientauno marzo = new trientauno();
         marzo.one();
+        String sida = scanner.nextLine();
+        String pito = sida.toLowerCase();
+        if(pito == "si" ){
+          System.out.println("Los dias festivos son: ");
+          System.out.println("Dia 14- Jueves Santo");
+          System.out.println("Dia 15- Viernes Santo");
+        }else{
+          System.out.println("No vera los dias festivos");
+        }
         break;
 
       case ("abril"):
         tri abril = new tri();
         abril.treinta();
+        String sexo = scanner.nextLine();
+        String pene = sexo.toLowerCase();
+        if(pene == "si" ){
+          System.out.println("Los dias festivos son: ");
+          System.out.println("Dia 1-Año Nuevo");
+          System.out.println("Dia 6-Epifanía del señor");
+        }else{
+          System.out.println("No vera los dias festivos");
+        }
         break;
 
       case ("mayo"):
